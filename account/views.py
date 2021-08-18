@@ -19,7 +19,7 @@ def send_otp(mobile, otp):
     conn = http.client.HTTPSConnection("api.msg91.com")
     authkey = settings.AUTH_KEY
     headers = {'content-type': "application/json"}
-    url = "http://control.msg91.com/api/sendotp.php?otp="+otp+"&message="+"Your otp is"+otp+"&mobile="+mobile+"&authkey="+authkey+"&country=91"
+    url = "http://control.msg91.com/api/sendotp.php?authkey=" + authkey + "&sender=MSGIND&mobile=" + mobile + "&otp=" + otp
     conn.request("GET", url, headers=headers)
     res = conn.getresponse()
     data = res.read()

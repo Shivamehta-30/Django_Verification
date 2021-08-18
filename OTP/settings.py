@@ -119,7 +119,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-AUTH_KEY = '365884AqJ2ap2e611b89b1P1'
+AUTH_KEY = '365884AdqoauMH611cb5f8P1'
 STATIC_URL = '/static/'
 
 # Default primary key field type
